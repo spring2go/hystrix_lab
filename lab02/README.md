@@ -10,7 +10,7 @@ https://github.com/Netflix/Hystrix.git
 https://github.com/Netflix-Skunkworks/hystrix-dashboard
 ```
 
-**注意**：hystrix-dashboard缺失一个`gradle-wrapper.jar`文件，可以将Hystrix中的`wrapper`文件件复制并覆盖hystrix-dashboard下的`wrapper`文件件。
+**注意**：hystrix-dashboard缺失一个`gradle-wrapper.jar`文件，可以将Hystrix中的`wrapper`文件夹复制并覆盖hystrix-dashboard下的`wrapper`文件夹。
 
 
 #### 2. 运行hystrix-example-webapp应用
