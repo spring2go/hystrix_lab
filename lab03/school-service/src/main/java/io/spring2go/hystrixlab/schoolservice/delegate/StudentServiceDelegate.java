@@ -19,16 +19,16 @@ public class StudentServiceDelegate {
 	RestTemplate restTemplate;
 
 	 @HystrixCommand
-    //	@HystrixCommand(commandProperties = {
-    //			@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "4000") })
-	//@HystrixCommand(fallbackMethod = "callStudentService_Fallback")
-//	@HystrixCommand(fallbackMethod = "callStudentService_Fallback",
-//			threadPoolKey = "studentServiceThreadPool",
-//			threadPoolProperties = {
-//					@HystrixProperty(name="coreSize", value="30"),
-//					@HystrixProperty(name="maxQueueSize", value="10")
-//			}
-//			)
+//    	@HystrixCommand(commandProperties = {
+//    			@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "4000") })
+//	@HystrixCommand(fallbackMethod = "callStudentService_Fallback")
+	// @HystrixCommand(fallbackMethod = "callStudentService_Fallback",
+	// 		threadPoolKey = "studentServiceThreadPool",
+	// 		threadPoolProperties = {
+	// 				@HystrixProperty(name="coreSize", value="30"),
+	// 				@HystrixProperty(name="maxQueueSize", value="10")
+	// 		}
+	// 		)
 	public String callStudentService(String schoolName) {
 
 		System.out.println("Getting School details for " + schoolName);
